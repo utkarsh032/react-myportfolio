@@ -1,7 +1,23 @@
 body {
- 
-  background: linear-gradient(170deg, rgba(49, 57, 73, 0.8) 20%, rgba(49, 57, 73, 0.5) 20%, rgba(49, 57, 73, 0.5) 35%, rgba(41, 48, 61, 0.6) 35%, rgba(41, 48, 61, 0.8) 45%, rgba(31, 36, 46, 0.5) 45%, rgba(31, 36, 46, 0.8) 75%, rgba(49, 57, 73, 0.5) 75%), linear-gradient(45deg, rgba(20, 24, 31, 0.8) 0%, rgba(41, 48, 61, 0.8) 50%, rgba(82, 95, 122, 0.8) 50%, rgba(133, 146, 173, 0.8) 100%) #313949;
-  
+  background: linear-gradient(
+      170deg,
+      rgba(49, 57, 73, 0.8) 20%,
+      rgba(49, 57, 73, 0.5) 20%,
+      rgba(49, 57, 73, 0.5) 35%,
+      rgba(41, 48, 61, 0.6) 35%,
+      rgba(41, 48, 61, 0.8) 45%,
+      rgba(31, 36, 46, 0.5) 45%,
+      rgba(31, 36, 46, 0.8) 75%,
+      rgba(49, 57, 73, 0.5) 75%
+    ),
+    linear-gradient(
+        45deg,
+        rgba(20, 24, 31, 0.8) 0%,
+        rgba(41, 48, 61, 0.8) 50%,
+        rgba(82, 95, 122, 0.8) 50%,
+        rgba(133, 146, 173, 0.8) 100%
+      )
+      #313949;
 }
 
 .homeScreen {
@@ -9,7 +25,6 @@ body {
   height: 100vh;
   font-family: cursive;
   margin-top: 2rem;
-  
 }
 
 .nav {
@@ -18,12 +33,11 @@ body {
   */
   width: 94%;
   margin: auto;
-    background: #FF0000;
+  background: #ff0000;
   /* transform: skew(-30deg, 0deg); */
   /* -webkit-transform: skew(-30deg, 0deg); */
   clip-path: polygon(18px 0%, 100% 0%, calc(100% - 18px) 100%, 0% 100%);
 }
-
 
 .navbar {
   display: flex;
@@ -39,9 +53,9 @@ body {
 .navbar > .links {
   width: 50%;
   font-size: 1.2rem;
-display: flex;
-align-items: center;
-justify-content:space-around;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
 }
 
 .navbar > .links a {
@@ -52,27 +66,22 @@ justify-content:space-around;
   border: 3px solid black;
   padding: 11px;
   background-color: antiquewhite;
-  
+
   clip-path: polygon(18px 0%, 100% 0%, calc(100% - 18px) 100%, 0% 100%);
   transition: 0.6s;
 
-  box-shadow: 
-    0.3em 0.3em 0 0 var(--color),
-    inset 0.3em 0.3em 0 0 var(--color);
+  box-shadow: 0.3em 0.3em 0 0 var(--color), inset 0.3em 0.3em 0 0 var(--color);
 }
 
-.navbar > .links a:hover{
+.navbar > .links a:hover {
   background-color: black;
   color: white;
   border: 3px solid antiquewhite;
 
-  box-shadow: 
-      0 0 0 0 var(--hover),
-      inset 6em 3.5em 0 0 var(--hover);
+  box-shadow: 0 0 0 0 var(--hover), inset 6em 3.5em 0 0 var(--hover);
 
-      scale: 1.04;
+  scale: 1.04;
 }
-
 
 .navbar > .links > .btn {
   font-size: 1rem;
@@ -81,25 +90,123 @@ justify-content:space-around;
   /* border-radius: 3rem; */
   padding: 12px;
   width: 25%;
-  
+
   clip-path: polygon(18px 0%, 100% 0%, calc(100% - 18px) 100%, 0% 100%);
-  
-
-
-  
 }
 
 /* Hero */
-/* .hero{
+.hero {
   display: flex;
   justify-content: space-between;
 
   width: 94%;
   margin: auto;
+  margin-top: 5%;
+  margin-right: 5%;
+  margin-left: 5%;
 }
 
-.polygon{
+.hero > .name {
+  /* background-color: #3e7ce3; */
+  width: 100%;
+}
 
-  background-color: red;
-  clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
-} */
+.hero > .name h2 {
+  /* background-color: brown; */
+  color: antiquewhite;
+  font-size: 2rem;
+}
+
+.hero > .name h1 {
+  /* background-color: darkcyan; */
+  color: white;
+  font-size: 4.3rem;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  letter-spacing: 5px;
+}
+
+.hero > .name > .line-1 {
+  height: 0.3rem;
+  width: 15rem;
+  border-radius: 50%;
+  background-color: yellow;
+}
+
+.hero > .name > p {
+  /* background-color: violet; */
+  font-size: 1.3rem;
+  color: antiquewhite;
+}
+
+.image {
+  /* background-color: aquamarine; */
+  width: 100%;
+}
+
+.image .polygon {
+  position: absolute;
+  z-index: -1;
+  height: 55%;
+  width: 35%;
+  background-color: rgb(230, 181, 181);
+  clip-path: polygon(25% 20%, 100% 20%, 75% 100%, 0% 100%);
+  top: 2rem;
+  left: 34%;
+
+  /* backdrop-filter: blur(20px); */
+}
+
+.image .boy img {
+  width: 25rem;
+  height: auto;
+}
+
+.service {
+  /* background-color: cadetblue; */
+  width: 100%;
+  font-size: 1.5rem;
+  text-transform: capitalize;
+}
+
+.service .line-2 {
+  height: 0.2rem;
+  width: 7rem;
+  border-radius: 50%;
+  background-color: yellow;
+}
+
+.service h3 {
+  color: antiquewhite;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.service p {
+  color: white;
+}
+
+.service a {
+  text-decoration: none;
+  color: antiquewhite;
+}
+
+.social {
+  padding: 0.7rem 0;
+}
+
+.social ul {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  gap: 1.5rem;
+}
+
+.social ul li {
+  list-style: none;
+}
+
+.social ul li a {
+  color: yellow;
+  background-color: #313949;
+  border-radius: 50%;
+  padding: 2px;
+}

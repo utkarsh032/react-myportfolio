@@ -7,6 +7,10 @@ import { GiSkills } from 'react-icons/gi'
 import { RiContactsLine } from 'react-icons/ri'
 import { GiStaticGuard } from 'react-icons/gi'
 import { SiCodeproject } from 'react-icons/si'
+import { TiSocialLinkedinCircular } from 'react-icons/ti'
+import { AiFillGithub } from 'react-icons/ai'
+import { AiFillInstagram } from 'react-icons/ai'
+import { IoLogoYoutube } from 'react-icons/io'
 
 const Navbar = () => {
   return (
@@ -50,55 +54,62 @@ const Navbar = () => {
         </div>
       </div>
 
-      {/* <div class='hero'>
+      <div class='hero'>
         <div class='name'>
           <h2>I'm</h2>
           <h1>Utkarsh Raj</h1>
-          <div>line</div>
+          <div className='line-1'></div>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita
-            doloremque porro asperiores ipsum nesciunt! Ipsam nemo natus
-            repellat minima unde perspiciatis veritatis illum.
+            A software enginer who provides service for digital marketing and
+            website designing content need, for all business with more than 2
+            years of experience.
           </p>
         </div>
 
         <div class='image'>
-          <div class='polygon'>ok</div>
+          <div class='polygon'></div>
           <div class='boy'>
             <img
-              src='https://s3.ivisa.com/website-assets/blog/id-photo2.jpg'
+              src='https://cdn.pixabay.com/photo/2013/07/13/10/07/man-156584_1280.png'
               alt=''
             />
           </div>
         </div>
+
         <div class='service'>
           <h3>service</h3>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint nisi
-            molestiae doloribus neque officiis? Excepturi officia asperiores
-            expedita incidunt rem natus, aliquid, alias distinctio culpa, rerum
-            cumque vitae aut corrupti!
+            Let's build quality products in programming and design with my
+            services.
           </p>
-          <button>Show More @</button>
+          <a href='/'>Show More</a>
+          <div class='line-2'></div>
           <div class='social'>
             <ul>
               <li>
-                <a href='/'>Fb</a>
+                <a href='/'>
+                  <TiSocialLinkedinCircular />
+                </a>
               </li>
               <li>
-                <a href='/'>Tw</a>
+                <a href='/'>
+                  <AiFillGithub />
+                </a>
               </li>
               <li>
-                <a href='/'>In</a>
+                <a href='/'>
+                  <AiFillInstagram />
+                </a>
               </li>
               <li>
-                <a href='/'>Pi</a>
+                <a href='/'>
+                  <IoLogoYoutube />
+                </a>
               </li>
             </ul>
           </div>
         </div>
-      </div> */}
-
+      </div>
     </div>
   )
 }
